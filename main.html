@@ -4,12 +4,62 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 550px;
+            width: 350px;
+            background-color: rgb(211, 211, 211);
+        }
+        .img-div{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            padding-top: 12px;
+        }
+        .img-div img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: top center;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .info-div{
+            text-align: center;
+            padding: 7px;
+        }
+        button{
+            padding: 4px 17px;
+            border-radius: 10px;
+            background-color: rgb(82, 86, 112);
+            color: white;
+            border: 1px solid rgb(78, 77, 91);
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+    <div class="container">
+        <div class="img-div">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-2165950545-69600af8c9b0d.jpg?crop=0.667xw:1.00xh;0.112xw,0&resize=1200:*" alt="price-card-info">
+        </div>
+        <div class="info-div">
+            <h1>Pricing Card</h1>
+            <p>Price: Rs.200</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
 
 </body>
 
